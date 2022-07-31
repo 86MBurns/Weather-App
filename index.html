@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Whats the Weather Like</title>
+    <title>Weather</title>
 </head>
-<header ></header>
+
 <body>
-    
+    <header class="container-fluid text-center text-white bg-blue weather-header">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-3">
+                <h2 id="search" class="form-lable">
+                    Search Your City
+                </h2>
+                <form id="search-form" class="form">
+                    <div class="form-inline">
+                        <div class="input-search">
+                            <input class="form-text weather-search" 
+                            type="text"
+                            id="searchInput"
+                            placeholder="type city here">
+                            <div class="submitBtn">
+                                <button type="submit"
+                                class="submitSearch">
+                            Search
+                        </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </aside>
+        </div>
+    </div>
 
     <script src="./assets/script.js"></script>
 </body>
