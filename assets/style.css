@@ -1,1 +1,34 @@
+html {
+    line-height: 1;
+    -webkit-text-size-adjust: auto;
+}
+
+main {
+    display: block;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+.hour {
+    box-sizing: content-box;
+    height: inherit;
+    overflow: visible;
+ }
+ 
+button {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0;
+    
+}
 

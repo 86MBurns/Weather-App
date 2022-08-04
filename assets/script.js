@@ -34,3 +34,14 @@ function appendToHistory(search){
     localStorage.setItem('history',JSON.stringify(history));
     renderHistory();
 }
+
+function todaysForcast(city, weather, time) {
+    var date = dayjs().time(time).format('mm/dd/YYYY');
+     
+    var temp = weather.temp;
+    var tempEl = document.createElement('');
+    var humidity = weather.humidity;
+    var windspd = weather.wind_speed;
+    var uvindex = weather.uvi;
+
+}
