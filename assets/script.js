@@ -10,6 +10,9 @@ var today = document.querySelector('#today')
 dayjs.extend(window.dayjs_plugin_utc);
 dayjs.extend(window.dayjs_plugin_timezone);
 
+function rendersearch(){ 
+    historyContainer = '';
+
 for (var i = history.length - 1; i >= 0; i--){
     var btn = document.createElement('button');
     btn.setAttribute('type','botton');
@@ -18,4 +21,16 @@ for (var i = history.length - 1; i >= 0; i--){
 
     btn.setAttribute('data-search', history[i]);
     btn.textContent = history[i];
+    historyContainer.append(btn);
+}
+}
+
+function appendToHistory(search){
+    if (history.indexOf(search) !== -1){
+        return;
+    }
+    history.push(search);
+
+    localStorage.setItem('history',JSON.stringify(history));
+    renderHistory();
 }
